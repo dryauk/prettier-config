@@ -1,0 +1,1 @@
+# @dryauk/prettier-config
