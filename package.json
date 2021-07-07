@@ -18,7 +18,9 @@
   ],
   "license": "MIT",
   "scripts": {
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "lint": "yarn lint:commit",
+    "lint:commit": "commitlint --from=$( git rev-list --tags --max-count=1 )"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",

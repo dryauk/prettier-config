@@ -41,6 +41,9 @@ jobs:
       - name: Install
         run: yarn --ignore-scripts
 
+      - name: Check lint
+        run: yarn lint
+
       - name: Release
         run: npx semantic-release
         env:
