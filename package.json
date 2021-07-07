@@ -1,0 +1,17 @@
+{
+  "name": "@dryauk/prettier-config",
+  "version": "0.1.0",
+  "description": "Prettier shareable config",
+  "author": "DryAuk (https://github.com/dryauk)",
+  "homepage": "https://github.com/dryauk/prettier-config#readme",
+  "repository": "https://github.com/dryauk/prettier-config",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "license": "MIT"
+}
