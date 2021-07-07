@@ -18,7 +18,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "postinstall": "husky install"
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
