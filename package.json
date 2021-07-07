@@ -5,6 +5,9 @@
   "author": "DryAuk (https://github.com/dryauk)",
   "homepage": "https://github.com/dryauk/prettier-config#readme",
   "repository": "https://github.com/dryauk/prettier-config",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "keywords": [
     "prettier",
     "prettier-config"
@@ -13,5 +16,16 @@
   "files": [
     "index.json"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "postinstall": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "husky": "^7.0.1",
+    "semantic-release": "^17.4.4"
+  }
 }
