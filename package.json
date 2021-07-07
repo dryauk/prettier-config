@@ -1,6 +1,6 @@
 {
   "name": "@dryauk/prettier-config",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Prettier shareable config",
   "author": "DryAuk (https://github.com/dryauk)",
   "homepage": "https://github.com/dryauk/prettier-config#readme",
