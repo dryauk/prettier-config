@@ -22,6 +22,9 @@
     "lint": "yarn lint:commit",
     "lint:commit": "commitlint --from=$( git rev-list --tags --max-count=1 )"
   },
+  "peerDependencies": {
+    "prettier": ">=2.0.0 <3.0.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^12.1.4",
     "@commitlint/config-conventional": "^12.1.4",
