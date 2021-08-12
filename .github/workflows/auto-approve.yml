@@ -1,11 +1,44 @@
-name: Auto approve & merge dependabot PR
+name: Dependabot Pull Request
+
 on: pull_request_target
 
 jobs:
+  label:
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+    steps:
+      - name: Dependabot metadata
+        id: dependabot-metadata
+        uses: dependabot/fetch-metadata@v1.1.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add a label for production dependencies
+        if: ${{ steps.dependabot-metadata.outputs.dependency-type == 'direct:production' }}
+        run: gh pr edit "${PR_URL}" --add-label "production"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add a label for development dependencies
+        if: ${{ steps.dependabot-metadata.outputs.dependency-type == 'direct:development' }}
+        run: gh pr edit "${PR_URL}" --add-label "development"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Add a label if requires manual approval
+        if: ${{ (steps.dependabot-metadata.outputs.dependency-type == 'direct:production' && steps.dependabot-metadata.outputs.update-type != 'version-update:semver-patch') || (steps.dependabot-metadata.outputs.dependency-type == 'direct:development' && steps.dependabot-metadata.outputs.update-type == 'version-update:semver-major') }}
+        run: gh pr edit "${PR_URL}" --add-label "manual-approval"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   approve:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
     steps:
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+      - name: Auto approve and merge pull request
+        uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
           github-token: ${{ secrets.CI_GH_TOKEN }}
