@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/dryauk/prettier-config/compare/v1.2.0...v1.2.1) (2021-09-12)
+
+
+### Bug Fixes
+
+* replace deprecated jsxBracketSameLine option ([c8f98af](https://github.com/dryauk/prettier-config/commit/c8f98afbf923caa0ce309a588cb1c293a8540a5a))
+
 # [1.2.0](https://github.com/dryauk/prettier-config/compare/v1.1.0...v1.2.0) (2021-07-18)
 
 
