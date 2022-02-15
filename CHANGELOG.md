@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/dryauk/prettier-config/compare/v1.2.1...v1.3.0) (2022-02-15)
+
+
+### Features
+
+* add prettier to dev dependencies ([ea14c3a](https://github.com/dryauk/prettier-config/commit/ea14c3a1ac57f9d9fa544a0879dae88669a9797e))
+
 ## [1.2.1](https://github.com/dryauk/prettier-config/compare/v1.2.0...v1.2.1) (2021-09-12)
 
 
