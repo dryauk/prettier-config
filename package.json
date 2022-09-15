@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^13.2.1",
-    "@dryauk/commitlint-config": "^2.0.0",
+    "@dryauk/commitlint-config": "^4.0.0",
     "@dryauk/semantic-release-config": "^3.0.0",
     "husky": "^8.0.1",
     "prettier": "^2.7.1",

@@ -43,10 +43,10 @@
     resolve-global "1.0.0"
     yargs "^17.0.0"
 
-"@commitlint/config-conventional@^13.1.0":
-  version "13.1.0"
-  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-13.1.0.tgz#f02871d50c73db0a31b777231f49203b964d9d59"
-  integrity sha512-zukJXqdr6jtMiVRy3tTHmwgKcUMGfqKDEskRigc5W3k2aYF4gBAtCEjMAJGZgSQE4DMcHeok0pEV2ANmTpb0cw==
+"@commitlint/config-conventional@^16.2.1":
+  version "16.2.4"
+  resolved "https://registry.yarnpkg.com/@commitlint/config-conventional/-/config-conventional-16.2.4.tgz#56647108c89ed06fc5271242787550331988c0fb"
+  integrity sha512-av2UQJa3CuE5P0dzxj/o/B9XVALqYzEViHrMXtDrW9iuflrqCStWBAioijppj9URyz6ONpohJKAtSdgAOE0gkA==
   dependencies:
     conventional-changelog-conventionalcommits "^4.3.1"
 
@@ -168,12 +168,12 @@
   dependencies:
     chalk "^4.0.0"
 
-"@dryauk/commitlint-config@^2.0.0":
-  version "2.0.0"
-  resolved "https://npm.pkg.github.com/download/@dryauk/commitlint-config/2.0.0/f6d26c13fc1b71a1de7a1ab30d6c19c8d9fa2020e42febcab1f1d6968ac97640#f1284cb37c44825bf7ea414354f2cd8dd7b7e115"
-  integrity sha512-wJX86kfwLDnBOtr9804MriXRi9VjarsIjOX3HQSCLYov1broATDZG2S7uo0sM70OqLuoHA51feFvueCZDuvatQ==
+"@dryauk/commitlint-config@^4.0.0":
+  version "4.0.0"
+  resolved "https://npm.pkg.github.com/download/@dryauk/commitlint-config/4.0.0/48ec4adf46bc6441db170d282603a2086921a77e#48ec4adf46bc6441db170d282603a2086921a77e"
+  integrity sha512-6yXhvmZnaesQi8sEwzAgoZmjHMywKtKhqIFPNmpkkkDNVasHRw6aZYRz0Yvha+iina6Di5O1otmqX5UzLxXFnQ==
   dependencies:
-    "@commitlint/config-conventional" "^13.1.0"
+    "@commitlint/config-conventional" "^16.2.1"
 
 "@dryauk/semantic-release-config@^3.0.0":
   version "3.0.0"
