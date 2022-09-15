@@ -170,10 +170,10 @@
   dependencies:
     "@commitlint/config-conventional" "^13.1.0"
 
-"@dryauk/semantic-release-config@^2.1.0":
-  version "2.1.0"
-  resolved "https://npm.pkg.github.com/download/@dryauk/semantic-release-config/2.1.0/88136ba8c9891f035226a7b3dd009c7308f6ad8c91a2f9cea13a9b9ef16c6d1e#402e815a51f9c109bc074c8408c14aeedd9f71cd"
-  integrity sha512-IFoOEX6f/xiT06/fafg7gWRUCu6EGY0PWczSAXkisTMa4DZSEmct4m33WAwTCDWksTRiiWfd37zwMnW881zFrg==
+"@dryauk/semantic-release-config@^3.0.0":
+  version "3.0.0"
+  resolved "https://npm.pkg.github.com/download/@dryauk/semantic-release-config/3.0.0/45134b8ba75a074f03e704e77d53d85223a7ad35#45134b8ba75a074f03e704e77d53d85223a7ad35"
+  integrity sha512-yQsaAixLwzUT5Eef9epDr0WJ28JTAxhxwxZSgAIPFPrr8KvZ94wfeaX/CMRnjeYcVnIDTXmNw6/+XnntgaqSQA==
   dependencies:
     "@semantic-release/changelog" "^6.0.1"
     "@semantic-release/git" "^10.0.1"
